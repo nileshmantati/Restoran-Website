@@ -38,7 +38,7 @@ function About() {
                         </div>
                         <div className="col-lg-6 d-flex align-items-center">
                             <div className="about_text d-flex flex-column align-items-start">
-                                <h5 className='fs-3'>About Us</h5>
+                                <h5 className='fs-3 position-relative'>About Us</h5>
                                 <h1 className='mb-4'>Welcome to <i className="fa-solid fa-utensils me-3" />
                                     Restoran</h1>
                                 <p class="mb-4 text-start">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos erat ipsum et lorem et sit, sed stet lorem sit.</p>

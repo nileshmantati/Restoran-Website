@@ -7,6 +7,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './Header';
 import Service from './Service';
 import About from './About';
+import Menu from './Menu';
+import Reservation from './Reservation';
 // import { Routes, Route } from "react-router";
 
 
@@ -22,6 +24,8 @@ function App() {
       <Header />
       <Service />
       <About />
+      <Menu />
+      <Reservation />
     </div>
   );
 }
