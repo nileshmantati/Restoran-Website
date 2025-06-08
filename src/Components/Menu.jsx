@@ -3,44 +3,52 @@ import '../Styles/mainpage.css';
 
 function Menu() {
     const menu = [{
-        img: '../img/menu-1.jpg',
-        title: "Chicken Burger",
-        contant: "Ipsum ipsum clita erat amet dolor justo diam",
+        img: <img src={require('../img/sushi.avif')} alt="" style={{ width: 80, height: 80 }} />,
+        title: "Salmon Sushi",
+        contant: "Fresh salmon with seasoned rice and seaweed",
+        price: '$140',
     },
     {
-        img: '../img/menu-2.jpg',
-        title: "Chicken Slice",
-        contant: "Ipsum ipsum clita erat amet dolor justo diam",
+        img: <img src={require('../img/tacos.avif')} alt="" style={{ width: 80, height: 80 }} />,
+        title: "Beef Tacos",
+        contant: "Spicy beef with veggies wrapped in soft tortillas",
+        price: '$110',
     },
     {
-        img: '../img/menu-3.jpg',
-        title: "Home Made Pizza",
-        contant: "Ipsum ipsum clita erat amet dolor justo diam",
+        img: <img src={require('../img/pasta.avif')} alt="" style={{ width: 80, height: 80 }} />,
+        title: "Creamy Alfredo Pasta",
+        contant: "Rich cream sauce with fettuccine and herbs",
+        price: '$130',
     },
     {
-        img: '../img/menu-4.jpg',
-        title: "Me",
-        contant: "Ipsum ipsum clita erat amet dolor justo diam",
+        img: <img src={require('../img/biryani.avif')} alt="" style={{ width: 80, height: 80 }} />,
+        title: "Chicken Biryani",
+        contant: "Aromatic rice with tender chicken and spices",
+        price: '$125',
     },
     {
-        img: '../img/menu-3.jpg',
-        title: "Home Made Pizza",
-        contant: "Ipsum ipsum clita erat amet dolor justo diam",
+        img: <img src={require('../img/noodles.avif')} alt="" style={{ width: 80, height: 80 }} />,
+        title: "Veg Hakka Noodles",
+        contant: "Stir-fried noodles with crunchy vegetables",
+        price: '$100',
     },
     {
-        img: '../img/menu-3.jpg',
-        title: "Home Made Pizza",
-        contant: "Ipsum ipsum clita erat amet dolor justo diam",
+        img: <img src={require('../img/pancake.avif')} alt="" style={{ width: 80, height: 80 }} />,
+        title: "Maple Pancakes",
+        contant: "Fluffy pancakes served with maple syrup",
+        price: '$130',
     },
     {
-        img: '../img/menu-3.jpg',
-        title: "Home Made Pizza",
-        contant: "Ipsum ipsum clita erat amet dolor justo diam",
+        img: <img src={require('../img/pizza.avif')} alt="" style={{ width: 80, height: 80 }} />,
+        title: "Margherita Pizza",
+        contant: "Classic pizza with tomato, mozzarella, and basil",
+        price: '$130',
     },
     {
-        img: '../img/menu-3.jpg',
-        title: "Home Made Pizza",
-        contant: "Ipsum ipsum clita erat amet dolor justo diam",
+        img: <img src={require('../img/burger.avif')} alt="" style={{ width: 80, height: 80 }} />,
+        title: "Double Cheese Burger",
+        contant: "Juicy beef patty with double cheese and fries",
+        price: '$150',
     },]
     useEffect(() => {
         if (typeof window !== 'undefined' && window.WOW) {
@@ -85,13 +93,13 @@ function Menu() {
                                 {menu.map((item) => (
                                     <div className="col-lg-6">
                                         <div className="nav_content_box d-flex align-items-center justify-content-between">
-                                            <img src={require('../img/menu-1.jpg')} alt="" style={{ width: 80 }} />
+                                            {item.img}
                                             <div className="nav_content_text w-100 ps-4">
                                                 <h5 className='d-flex justify-content-between align-items-center border-1 border-bottom pb-2'>
-                                                    <span>Chicken Burger</span>
-                                                    <span className='text_primary'>$115</span>
+                                                    <span>{item.title}</span>
+                                                    <span className='text_primary'>{item.price}</span>
                                                 </h5>
-                                                <p className='mb-0 text-start'>Ipsum ipsum clita erat amet dolor justo diam</p>
+                                                <p className='mb-0 text-start'>{item.contant}</p>
                                             </div>
                                         </div>
                                     </div>

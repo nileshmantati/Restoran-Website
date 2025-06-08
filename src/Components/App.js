@@ -9,6 +9,8 @@ import Service from './Service';
 import About from './About';
 import Menu from './Menu';
 import Reservation from './Reservation';
+import Masterchefs from './Masterchefs';
+import Testimonial from './Testimonial';
 // import { Routes, Route } from "react-router";
 
 
@@ -26,6 +28,8 @@ function App() {
       <About />
       <Menu />
       <Reservation />
+      <Masterchefs />
+      <Testimonial />
     </div>
   );
 }

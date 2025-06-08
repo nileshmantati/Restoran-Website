@@ -312,6 +312,8 @@ img {
     font-style: italic;
 }
 
+/* Reservation Scetion Start  */
+
 .video {
     position: relative;
     height: 100%;
@@ -322,6 +324,10 @@ img {
     background-size: cover;
 }
 
+.video button i {
+    z-index: 1;
+}
+
 .video button {
     width: 85px;
     height: 85px;
@@ -329,11 +335,25 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 50%;
     background-color: #FEA116;
-    animation: pluse_border 1500ms ease-out infinite;
 }
 
-@keyframes plus_border {
+.video button::before {
+    content: '';
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: #FEA116;
+    border-radius: 50%;
+    z-index: 0;
+    transform: translate(-50%, -50%);
+    animation: plus-border 1500ms ease-out infinite;
+}
+
+@keyframes plus-border {
     0% {
         transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
         opacity: 1;
@@ -346,13 +366,185 @@ img {
     }
 }
 
-/* .video button::before { */
-/* content: ''; */
-/* width: 100%; */
-/* height: 100%; */
-/* position: absolute; */
-/* top: 50%; */
-/* left: 50%; */
-/* background-color: #FEA116; */
-/*  */
-/* } */
+.main_form_box {
+    background-color: #0F172B;
+}
+
+.reservation_text h5 {
+    font-family: "Pacifico", cursive;
+    color: #FEA116;
+    display: inline-block;
+}
+
+.reservation_text h5::after {
+    position: absolute;
+    content: '';
+    width: 45px;
+    height: 2px;
+    top: 50%;
+    right: -55px;
+    margin-top: -1px;
+    background-color: #FEA116;
+}
+
+.reservation_text h1 {
+    font-family: "Nunito", sans-serif !important;
+    font-weight: 800;
+}
+
+.reservation_inputs input:focus {
+    color: #666565;
+    background-color: #fff;
+    border-color: #ffd08b;
+    outline: 0;
+    box-shadow: 0 0 0 .25rem rgba(254, 161, 22, 0.25);
+}
+
+.reservation_inputs label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    pointer-events: none;
+    transform-origin: 0 0;
+    border: 1px solid transparent;
+    z-index: 0;
+    transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out;
+}
+
+.reservation_inputs input:focus~label {
+    opacity: .65;
+    transform: scale(0.85) translateY(-0.9rem) translateX(0.15rem);
+}
+
+.reservation_inputs select {
+    padding-top: 1.25rem !important;
+    padding-bottom: .9rem !important;
+}
+
+.reservation_inputs select:focus {
+    color: #666565;
+    background-color: #fff;
+    border-color: #ffd08b;
+    outline: 0;
+    box-shadow: 0 0 0 .25rem rgba(254, 161, 22, 0.25);
+}
+
+.reservation_inputs .people_label {
+    opacity: .65;
+    transform: scale(0.85) translateY(-0.9rem) translateX(0.15rem);
+}
+
+.reservation_inputs button {
+    color: #ffffff;
+    background-color: #FEA116;
+    border: none;
+    font-family: "Nunito", sans-serif !important;
+}
+
+/* Master Chefs Section Start  */
+
+.team_box {
+    height: calc(100% - 65px);
+    box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+    transition: all ease-in-out .4s;
+}
+
+.img_box img {
+    transform: scale(1);
+    transition: all ease-in-out .4s;
+}
+
+.team_box h5 {
+    font-family: "Nunito", sans-serif !important;
+    font-weight: 800;
+}
+
+.team_box p {
+    font-family: "Heebo", sans-serif;
+    color: rgb(121, 121, 121);
+    font-weight: 500;
+}
+
+.social {
+    transition: all ease-in-out .4s;
+}
+
+.social a {
+    text-decoration: none;
+    background-color: #FEA116;
+    border-radius: 50px 50px 0px 0px;
+}
+
+.social i {
+    color: #ffffff;
+}
+
+.team_box:hover {
+    height: 100%;
+}
+
+.team_box:hover .img_box img {
+    transform: scale(1.2);
+}
+
+/* Testimonial Slider Section Start  */
+
+.testimonial_slider .item {
+    border: 1px solid rgb(190, 190, 190);
+}
+
+.bg-owncolor {
+    background-color: #FEA116;
+}
+
+.owncolor {
+    color: #FEA116;
+}
+
+.testimonial_slider .item img {
+    border-radius: 50%;
+}
+
+
+.testimonial_slider .item h5 {
+    font-family: "Nunito", sans-serif !important;
+    font-weight: 800;
+}
+
+.testimonial_slider .item p {
+    font-family: "Heebo", sans-serif;
+    font-weight: 500;
+}
+
+.testimonial_slider .item span {
+    font-family: "Heebo", sans-serif;
+    font-weight: 500;
+    font-size: .9rem;
+}
+
+.slick-dots li button {
+    width: 15px !important;
+    height: 15px !important;
+    background-color: #FEA116;
+    border-radius: 50%;
+}
+
+.slick-dots li.slick-active button {
+    width: 15px !important;
+    height: 15px !important;
+    background-color: #FEA116;
+    border-radius: 50%;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #FEA116 !important;
+}
+
+.slick-dots li button:before {
+    width: 15px !important;
+    height: 15px !important;
+    color: transparent !important;
+    border: 1px solid gray !important;
+    border-radius: 50%;
+}
