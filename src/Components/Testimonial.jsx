@@ -81,7 +81,9 @@ function Testimonial() {
     }, []);
     return (
         <div>
-            <div className="container-xxl pt-3">
+            <div className="container-xxl pt-3 wow animate__fadeInUp"
+                data-wow-delay="0.3s"
+                data-wow-duration="1s">
                 <div className="container">
                     <div className="heading_text py-5 wow animate__fadeInUp"
                         data-wow-delay="0.3s"
@@ -89,9 +91,7 @@ function Testimonial() {
                         <h5 className='mb-0 fs-3 position-relative mb-3'>Testimonial</h5>
                         <h1 className='mb-0'>Our Clients Say!!!</h1>
                     </div>
-                    <Slider {...settings} className='testimonial_slider py-4 py-lg-0 mt-4 wow animate__fadeInUp'
-                        data-wow-delay="0.3s"
-                        data-wow-duration="1s">
+                    <Slider {...settings} className='testimonial_slider py-4 py-lg-0 mt-4'>
                         {testimonial.map((item, index) => (
                             <div className="px-3">
                                 <div key={index} className='item p-3 rounded-2 d-flex flex-column align-items-start'>

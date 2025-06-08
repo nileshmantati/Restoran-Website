@@ -510,17 +510,20 @@ img {
 .testimonial_slider .item h5 {
     font-family: "Nunito", sans-serif !important;
     font-weight: 800;
+    color: black;
 }
 
 .testimonial_slider .item p {
     font-family: "Heebo", sans-serif;
     font-weight: 500;
+    color: rgb(130, 130, 130);
 }
 
 .testimonial_slider .item span {
     font-family: "Heebo", sans-serif;
     font-weight: 500;
     font-size: .9rem;
+    color: rgb(130, 130, 130);
 }
 
 .slick-dots li button {
@@ -547,4 +550,109 @@ img {
     color: transparent !important;
     border: 1px solid gray !important;
     border-radius: 50%;
+}
+
+/* Footer Start  */
+
+.footer_title {
+    font-family: "Pacifico", cursive;
+    color: #FEA116;
+    display: inline-block;
+}
+
+.footer_title::after {
+    position: absolute;
+    content: '';
+    width: 45px;
+    height: 2px;
+    top: 50%;
+    right: -55px;
+    margin-top: -1px;
+    background-color: #FEA116;
+}
+
+.heading_text h1 {
+    font-family: "Nunito", sans-serif !important;
+    font-weight: 800;
+}
+
+footer {
+    background-color: #0F172B;
+}
+
+footer ul li {
+    list-style: none;
+}
+
+footer a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: all ease-in-out .4s;
+}
+
+.company_ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.company_ul a:hover {
+    letter-spacing: 2px;
+}
+
+.footer_social_ul a {
+    width: 35px !important;
+    height: 35px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid gray;
+    border-radius: 50%;
+}
+
+p {
+    color: #ffffff;
+}
+
+.footer_social_ul a:hover {
+    background-color: #ffffff;
+}
+
+.footer_social_ul a:hover i {
+    color: #FEA116;
+}
+
+h5 {
+    font-family: "Nunito", sans-serif !important;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.newsltter {
+    position: relative;
+}
+
+.newsltter button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    color: #ffffff;
+    background-color: #FEA116;
+    z-index: 2;
+}
+
+.newsltter input:focus {
+    outline: none;
+    border-color: #feaa2d;
+    box-shadow: 0 0 0 .25rem rgba(216, 137, 19, 0.5);
+}
+
+.copyright p a {
+    color: #ffffff;
+}
+
+.footer_menu a {
+    text-decoration: none;
+    color: #ffffff;
+    border-right: 1px solid rgba(255, 255, 255, .1);
 }
