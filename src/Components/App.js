@@ -20,13 +20,13 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Homepage />} />
-          <Route path="/Aboutuspage" element={<Aboutuspage />} />
-          <Route path="/Servicepage" element={<Servicepage />} />
-          <Route path="/Menupage" element={<Menupage />} />
-          <Route path="/Bookingpage" element={<Bookingpage />} />
-          <Route path="/Teampage" element={<Teampage />} />
-          <Route path="/Testimonialpage" element={<Testimonialpage />} />
-          <Route path="/ContactPage" element={<ContactPage />} />
+          <Route path="/aboutuspage" element={<Aboutuspage />} />
+          <Route path="/servicepage" element={<Servicepage />} />
+          <Route path="/menupage" element={<Menupage />} />
+          <Route path="/bookingpage" element={<Bookingpage />} />
+          <Route path="/teampage" element={<Teampage />} />
+          <Route path="/testimonialpage" element={<Testimonialpage />} />
+          <Route path="/contactpage" element={<ContactPage />} />
         </Routes>
       </Router>
     </div>
