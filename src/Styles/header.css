@@ -1,0 +1,64 @@
+/* Home Section Start  */
+
+.home_section {
+    background: linear-gradient(rgba(15, 23, 43, .9), rgba(15, 23, 43, .9)), url(../img/bg-hero.jpg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home_text {
+    padding-top: 9rem;
+    padding-bottom: 8rem;
+}
+
+.home_text h1 {
+    font-family: "Nunito", sans-serif;
+    font-weight: 800;
+}
+
+.home_text p {
+    color: #ffffff;
+}
+
+.home_text a {
+    font-family: "Nunito", sans-serif !important;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #FEA116;
+    text-decoration: none;
+    transition: all ease-in-out .4s;
+}
+
+.home_text a:hover {
+    background-color: #feaf39;
+    border-color: #feaa2d;
+    box-shadow: 0 0 0 .25rem rgba(216, 137, 19, 0.5);
+}
+
+.home_section img {
+    animation: imgRotate 50s linear infinite;
+}
+
+.about_nav ul li {
+    color: #ffffff;
+    list-style: none;
+}
+
+.about_nav ul li a {
+    font-family: "Nunito", sans-serif;
+    color: #FEA116;
+    background-color: transparent;
+}
+
+.about_nav ul li a:hover {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+.about_nav ul li a::before {
+    float: right;
+    content: "/";
+    color: #6c757d;
+}

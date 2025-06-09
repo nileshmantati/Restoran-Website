@@ -1,5 +1,6 @@
 import React from 'react';
 import '../Styles/mainpage.css';
+import { NavLink } from 'react-router-dom';
 
 function Footer() {
     return (
@@ -10,13 +11,18 @@ function Footer() {
                         <div className="col-md-6 col-lg-3 text-start">
                             <h4 className='footer_title position-relative'>Company</h4>
                             <ul className="company_ul mb-0 ps-0 mt-4 row-gap-2">
-                                <li><a href="#"><i className="fa-solid fa-angle-right me-2" />About Us</a></li>
+                                {/* <li><a href="#"><i className="fa-solid fa-angle-right me-2" />About Us</a></li>
                                 <li><a href="#"><i className="fa-solid fa-angle-right me-2" />Contact Us</a></li>
                                 <li><a href="#"><i className="fa-solid fa-angle-right me-2" />Reservation</a></li>
                                 <li><a href="#"><i className="fa-solid fa-angle-right me-2" />Privacy Policy</a></li>
-                                <li><a href="#"><i className="fa-solid fa-angle-right me-2" />Terms & Condition</a></li>
+                                <li><a href="#"><i className="fa-solid fa-angle-right me-2" />Terms & Condition</a></li> */}
+                                <li><NavLink to="/Aboutuspage"><i className="fa-solid fa-angle-right me-2" />About us</NavLink></li>
+                                <li><NavLink to="/ContactPage"><i className="fa-solid fa-angle-right me-2" />Contact Us</NavLink></li>
+                                <li><NavLink to="/Bookingpage"><i className="fa-solid fa-angle-right me-2" />Reservation</NavLink></li>
+                                <li><NavLink to="#"><i className="fa-solid fa-angle-right me-2" />Privacy Policy</NavLink></li>
+                                <li><NavLink to="#"><i className="fa-solid fa-angle-right me-2" />Terms & Condition</NavLink></li>
                             </ul>
-                        </div>
+                        </div >
                         <div className="col-md-6 col-lg-3 text-start">
                             <h4 className='footer_title position-relative'>Contact</h4>
                             <p className='mb-2 mt-4'><i className="fa-solid fa-location-dot me-3" /><span>123 Street, New York, USA</span></p>
@@ -44,8 +50,8 @@ function Footer() {
                                 <button className='py-2 px-3 mt-2 me-2 rounded-2'>SIGNUP</button>
                             </div>
                         </div>
-                    </div>
-                </div>
+                    </div >
+                </div >
                 <div className="container">
                     <div className="copyright py-4">
                         <div className="row">
@@ -63,8 +69,8 @@ function Footer() {
                         </div>
                     </div>
                 </div>
-            </footer>
-        </div>
+            </footer >
+        </div >
     )
 }
 

@@ -1,13 +1,14 @@
 import React, { useEffect } from 'react';
 import '../Styles/mainpage.css';
-import Container from 'react-bootstrap/Container';
+import '../Styles/header.css';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { NavLink } from 'react-router-dom';
+import Footer from './Footer';
+import Reservation from './Reservation';
 
-function Header() {
-
+function Bookingpage() {
     useEffect(() => {
         const header = document.getElementById("mainHeader");
 
@@ -32,10 +33,10 @@ function Header() {
             new window.WOW().init();
         }
     }, []);
-
     return (
         <div>
-            <header>
+            {/* Header Start  */}
+            <header className='mb-4'>
                 <div className="col-12" id='mainHeader'>
                     <div className="container-xxl px-0">
                         <Navbar expand="lg" className='px-4 px-lg-5 py-3'>
@@ -61,25 +62,35 @@ function Header() {
                     </div>
                 </div>
                 <section className="container-xxl px-0" id="home">
-                    <div className="main_home_section">
-                        <div className="d-flex align-items-center flex-wrap">
-                            <div className="col-12 col-lg-6 main_home_text text-center text-lg-start px-0 px-lg-4 wow animate__slideInLeft"
-                                data-wow-delay="0.3s"
+                    <div className="home_section">
+                        <div className="d-flex align-itemFs-center flex-wrap">
+                            <div className="col-12 home_text text-center px-0 px-lg-4 wow animate__fadeInDown"
+                                data-wow-delay="0.1s"
                                 data-wow-duration="1s">
-                                <h1 className="text-white display-3">Enjoy Our <br />
-                                    Delicious Meal</h1>
-                                <p className='mb-0 lh-base pb-5 col-11'>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
-                                <a href="#" className='px-5 py-3 rounded-2'>Book A Table</a>
-                            </div>
-                            <div className="col-12 col-lg-6 text-center text-lg-start px-0 px-lg-4">
-                                <img src={require('../img/hero.png')} alt="Hero Img" className='img-fluid' />
+                                <h1 className="text-white display-3">Booking</h1>
+                                <nav className='about_nav mt-3'>
+                                    <ul className='mb-0 ps-0 d-flex justify-content-center'>
+                                        <li><NavLink to="/" className="px-2">Home</NavLink></li>
+                                        <li className='px-2'>BOOKING</li>
+                                    </ul>
+                                </nav>
                             </div>
                         </div>
                     </div>
                 </section>
             </header>
-        </div >
+            {/* Header End  */}
+
+            {/* Reservation Section Start  */}
+            <Reservation />
+            {/* Reservation Section End   */}
+
+            {/* Footer Start  */}
+            <Footer />
+            {/* Footer End  */}
+
+        </div>
     )
 }
 
-export default Header
+export default Bookingpage

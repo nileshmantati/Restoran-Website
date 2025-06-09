@@ -51,11 +51,29 @@ img {
     text-transform: uppercase;
 }
 
-.active {
+.nav-link a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.nav-link.active {
     color: #FEA116 !important;
 }
 
-.dropdown-item:hover {
+.nav-dropdown.active {
+    color: #ffffff !important;
+    background-color: #FEA116 !important;
+}
+
+.nav-dropdown {
+    text-decoration: none !important;
+    color: black !important;
+    display: block;
+    padding-left: 1.8rem;
+    padding: .5rem 0px .5rem 1.8rem;
+}
+
+.nav-dropdown:hover {
     background-color: rgb(203, 203, 203);
 }
 
@@ -75,28 +93,28 @@ img {
 
 /* Home Section Start  */
 
-.home_section {
+.main_home_section {
     background: linear-gradient(rgba(15, 23, 43, .9), rgba(15, 23, 43, .9)), url(../img/bg-hero.jpg);
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.home_text {
-    padding-top: 20rem;
-    padding-bottom: 20rem;
+.main_home_text {
+    padding-top: 18rem;
+    padding-bottom: 18rem;
 }
 
-.home_text h1 {
+.main_home_text h1 {
     font-family: "Nunito", sans-serif;
     font-weight: 800;
 }
 
-.home_text p {
+.main_home_text p {
     color: #ffffff;
 }
 
-.home_text a {
+.main_home_text a {
     font-family: "Nunito", sans-serif !important;
     text-transform: uppercase;
     color: #ffffff;
@@ -105,13 +123,13 @@ img {
     transition: all ease-in-out .4s;
 }
 
-.home_text a:hover {
+.main_home_text a:hover {
     background-color: #feaf39;
     border-color: #feaa2d;
     box-shadow: 0 0 0 .25rem rgba(216, 137, 19, 0.5);
 }
 
-.home_section img {
+.main_home_section img {
     animation: imgRotate 50s linear infinite;
 }
 
@@ -134,8 +152,9 @@ img {
 }
 
 .service_box h5 {
-    font-family: "Nunito", sans-serif;
+    font-family: "Nunito", sans-serif !important;
     font-weight: 800;
+    color: black;
     transition: all ease-in-out .5s;
 }
 
@@ -163,7 +182,8 @@ img {
 
 .about_text h5 {
     color: #FEA116;
-    font-family: "Pacifico", cursive;
+    font-family: "Pacifico", cursive !important;
+    font-weight: 500;
 }
 
 .about_text h1 {
@@ -221,8 +241,9 @@ img {
 /* Food Menu Section Start  */
 
 .heading_text h5 {
-    font-family: "Pacifico", cursive;
+    font-family: "Pacifico", cursive !important;
     color: #FEA116;
+    font-weight: 500;
     display: inline-block;
 }
 
@@ -298,6 +319,7 @@ img {
 .nav_content_text h5 span {
     font-family: "Nunito", sans-serif !important;
     font-weight: 800;
+    color: black;
 }
 
 .text_primary {
@@ -371,7 +393,8 @@ img {
 }
 
 .reservation_text h5 {
-    font-family: "Pacifico", cursive;
+    font-family: "Pacifico", cursive !important;
+    font-weight: 500;
     color: #FEA116;
     display: inline-block;
 }
@@ -431,6 +454,19 @@ img {
 }
 
 .reservation_inputs .people_label {
+    opacity: .65;
+    transform: scale(0.85) translateY(-0.9rem) translateX(0.15rem);
+}
+
+.reservation_inputs textarea:focus {
+    color: #666565;
+    background-color: #fff;
+    border-color: #ffd08b;
+    outline: 0;
+    box-shadow: 0 0 0 .25rem rgba(254, 161, 22, 0.25);
+}
+
+.reservation_inputs textarea:focus~label {
     opacity: .65;
     transform: scale(0.85) translateY(-0.9rem) translateX(0.15rem);
 }
@@ -655,4 +691,32 @@ h5 {
     text-decoration: none;
     color: #ffffff;
     border-right: 1px solid rgba(255, 255, 255, .1);
+}
+
+.contact_heading_box {
+    outline: 1px dashed rgb(155, 236, 34);
+}
+
+.contact_heading h5 {
+    font-family: "Pacifico", cursive !important;
+    color: #FEA116;
+    font-weight: 500;
+    display: inline-block;
+}
+
+.contact_heading h5::after {
+    position: absolute;
+    content: '';
+    width: 45px;
+    height: 2px;
+    top: 50%;
+    right: -55px;
+    margin-top: -1px;
+    background-color: #FEA116;
+}
+
+.contact_heading p {
+    font-family: "Heebo", sans-serif;
+    font-weight: 500;
+    color: black;
 }
