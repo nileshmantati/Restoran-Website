@@ -26,6 +26,8 @@ function App() {
         <Route path="/Teampage" element={<Teampage />} />
         <Route path="/Testimonialpage" element={<Testimonialpage />} />
         <Route path="/ContactPage" element={<ContactPage />} />
+
+        <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </div>
   );
