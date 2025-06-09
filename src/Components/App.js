@@ -4,7 +4,7 @@ import React from 'react';
 import '../Styles/all.min.css';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Homepage from './Homepage';
 import Aboutuspage from './Aboutuspage';
 import Servicepage from './Servicepage';
@@ -17,16 +17,18 @@ import ContactPage from './ContactPage';
 function App() {
   return (
     <div className="App">
-      <Routes>
-        <Route path="/" element={<Homepage />} />
-        <Route path="/Aboutuspage" element={<Aboutuspage />} />
-        <Route path="/Servicepage" element={<Servicepage />} />
-        <Route path="/Menupage" element={<Menupage />} />
-        <Route path="/Bookingpage" element={<Bookingpage />} />
-        <Route path="/Teampage" element={<Teampage />} />
-        <Route path="/Testimonialpage" element={<Testimonialpage />} />
-        <Route path="/ContactPage" element={<ContactPage />} />
-      </Routes>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Homepage />} />
+          <Route path="/Aboutuspage" element={<Aboutuspage />} />
+          <Route path="/Servicepage" element={<Servicepage />} />
+          <Route path="/Menupage" element={<Menupage />} />
+          <Route path="/Bookingpage" element={<Bookingpage />} />
+          <Route path="/Teampage" element={<Teampage />} />
+          <Route path="/Testimonialpage" element={<Testimonialpage />} />
+          <Route path="/ContactPage" element={<ContactPage />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
