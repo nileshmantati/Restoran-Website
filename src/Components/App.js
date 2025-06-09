@@ -4,7 +4,7 @@ import React from 'react';
 import '../Styles/all.min.css';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import Homepage from './Homepage';
 import Aboutuspage from './Aboutuspage';
 import Servicepage from './Servicepage';
