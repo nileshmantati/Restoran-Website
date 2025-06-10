@@ -17,18 +17,16 @@ import ContactPage from './ContactPage';
 function App() {
   return (
     <div className="App">
-      <Router>
-        <Routes>
-          <Route path="/" element={<Homepage />} />
-          <Route path="/aboutuspage" element={<Aboutuspage />} />
-          <Route path="/servicepage" element={<Servicepage />} />
-          <Route path="/menupage" element={<Menupage />} />
-          <Route path="/bookingpage" element={<Bookingpage />} />
-          <Route path="/teampage" element={<Teampage />} />
-          <Route path="/testimonialpage" element={<Testimonialpage />} />
-          <Route path="/contactpage" element={<ContactPage />} />
-        </Routes>
-      </Router>
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/aboutuspage" element={<Aboutuspage />} />
+        <Route path="/servicepage" element={<Servicepage />} />
+        <Route path="/menupage" element={<Menupage />} />
+        <Route path="/bookingpage" element={<Bookingpage />} />
+        <Route path="/teampage" element={<Teampage />} />
+        <Route path="/testimonialpage" element={<Testimonialpage />} />
+        <Route path="/contactpage" element={<ContactPage />} />
+      </Routes>
     </div>
   );
 }
