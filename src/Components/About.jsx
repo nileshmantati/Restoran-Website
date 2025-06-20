@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { NavLink } from 'react-router-dom';
 import '../Styles/mainpage.css';
 
 function About() {
@@ -63,7 +64,8 @@ function About() {
                                         </div>
                                     </div>
                                 </div>
-                                <a href="#" className='px-5 py-3 rounded-2'>read more</a>
+                                {/* <a href="#" className='px-5 py-3 rounded-2'>read more</a> */}
+                                <NavLink to="/Aboutuspage" className="px-5 py-3 rounded-2">read more</NavLink>
                             </div>
                         </div>
                     </div>

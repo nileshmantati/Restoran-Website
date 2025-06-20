@@ -28,13 +28,13 @@ function Reservation() {
                                 <div className="row row-gap-3">
                                     <div className="col-md-6">
                                         <div className="reservation_inputs position-relative rounded-2 overflow-hidden">
-                                            <input type="text" placeholder='' className='col-12 p-3' />
+                                            <input type="text" placeholder='' className='col-12 p-3' required />
                                             <label For="name" className='p-3' >Your Name</label>
                                         </div>
                                     </div>
                                     <div className="col-md-6">
                                         <div className="reservation_inputs position-relative rounded-2 overflow-hidden">
-                                            <input type="email" placeholder='' className='col-12 p-3' />
+                                            <input type="email" placeholder='' className='col-12 p-3' required />
                                             <label For="EMAIL" className='p-3' >Your Email</label>
                                         </div>
                                     </div>

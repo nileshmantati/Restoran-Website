@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import '../Styles/mainpage.css';
+import { NavLink } from 'react-router-dom';
 
 function Menu() {
     const menu = [{
@@ -95,10 +96,12 @@ function Menu() {
                                         <div className="nav_content_box d-flex align-items-center justify-content-between">
                                             {item.img}
                                             <div className="nav_content_text w-100 ps-4">
-                                                <h5 className='d-flex justify-content-between align-items-center border-1 border-bottom pb-2'>
-                                                    <span>{item.title}</span>
-                                                    <span className='text_primary'>{item.price}</span>
-                                                </h5>
+                                                <NavLink to="/Menupage">
+                                                    <h5 className='d-flex justify-content-between align-items-center border-1 border-bottom pb-2'>
+                                                        <span>{item.title}</span>
+                                                        <span className='text_primary'>{item.price}</span>
+                                                    </h5>
+                                                </NavLink>
                                                 <p className='mb-0 text-start'>{item.contant}</p>
                                             </div>
                                         </div>

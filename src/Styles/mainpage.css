@@ -316,6 +316,10 @@ img {
     box-shadow: 0 0 45px rgba(0, 0, 0, .08);
 }
 
+.nav_content_text a {
+    text-decoration: none;
+}
+
 .nav_content_text h5 span {
     font-family: "Nunito", sans-serif !important;
     font-weight: 800;

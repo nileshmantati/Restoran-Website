@@ -69,7 +69,7 @@ function Header() {
                                 <h1 className="text-white display-3">Enjoy Our <br />
                                     Delicious Meal</h1>
                                 <p className='mb-0 lh-base pb-5 col-11'>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
-                                <a href="#" className='px-5 py-3 rounded-2'>Book A Table</a>
+                                <NavLink to="/Bookingpage" className="px-5 py-3 rounded-2">Book A Table</NavLink>
                             </div>
                             <div className="col-12 col-lg-6 text-center text-lg-start px-0 px-lg-4">
                                 <img src={require('../img/hero.png')} alt="Hero Img" className='img-fluid' />
