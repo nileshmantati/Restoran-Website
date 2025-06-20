@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Restoran-Website/static/css/main.2d8beea9.css",
-    "main.js": "/Restoran-Website/static/js/main.c79048f3.js",
+    "main.css": "/Restoran-Website/static/css/main.314eb6fd.css",
+    "main.js": "/Restoran-Website/static/js/main.f0e8a0e5.js",
     "static/js/453.52338687.chunk.js": "/Restoran-Website/static/js/453.52338687.chunk.js",
     "static/media/noodles.avif": "/Restoran-Website/static/media/noodles.35c1fb38e27464162b79.avif",
     "static/media/sushi.avif": "/Restoran-Website/static/media/sushi.51f9197a1c2748383d48.avif",
@@ -35,12 +35,12 @@
     "static/media/slick.eot": "/Restoran-Website/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/Restoran-Website/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/Restoran-Website/static/media/slick.295183786cd8a1389865.woff",
-    "main.2d8beea9.css.map": "/Restoran-Website/static/css/main.2d8beea9.css.map",
-    "main.c79048f3.js.map": "/Restoran-Website/static/js/main.c79048f3.js.map",
+    "main.314eb6fd.css.map": "/Restoran-Website/static/css/main.314eb6fd.css.map",
+    "main.f0e8a0e5.js.map": "/Restoran-Website/static/js/main.f0e8a0e5.js.map",
     "453.52338687.chunk.js.map": "/Restoran-Website/static/js/453.52338687.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2d8beea9.css",
-    "static/js/main.c79048f3.js"
+    "static/css/main.314eb6fd.css",
+    "static/js/main.f0e8a0e5.js"
   ]
 }
